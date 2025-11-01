@@ -3,13 +3,13 @@ package aula06.calculadora;
 public class App {
 
 	public static void main(String[] args) {
-		Calculadora calculadora1 = new Calculadora();
 		
-		double totalSomar = calculadora1.somar(4, 120);
-		double totalSubtrair = calculadora1.subtrair(4, totalSomar);
-		double totalDividir = calculadora1.dividir(totalSubtrair, 120);
-		double totalMultiplicar = calculadora1.multiplicar(4, totalDividir);
-		double total = calculadora1.somar(totalDividir, totalSomar);
+		double totalSomar = Calculadora.somar(4, 120);
+		double totalSubtrair = Calculadora.subtrair(4, totalSomar);
+		double totalDividir = Calculadora.dividir(totalSubtrair, 120);
+		double totalMultiplicar = Calculadora.multiplicar(4, totalDividir);
+		double total = Calculadora.somar(totalDividir, totalSomar);
+		total = Math.pow(total, 4);
 		
 		System.out.println("Total = " + total);
 	
